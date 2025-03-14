@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="common/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Design House Renovations</title>
+    </head>
+
+    <body>
+        <header class="c-header c-hamburger-menu"><!-- 追記 クラスを追記 -->
+            <a href="#" class="c-header__logo">
+                <img src="images/logo.svg" alt="Design House Renovationsの赤ロゴ">
+            </a>
+            <!-- 追記 idはlabelのforと同じにする --> 
+            <input type="checkbox" name="hamburger" id="hamburger" class="c-hamburger-menu__input"/>
+            <!-- 追記 ハンバーガーメニュを開いた時の背景 -->
+            <label for="hamburger" class="c-hamburger-menu__bg"></label>
+            <ul class="c-header__list c-hamburger-menu__list"><!-- 追記 クラスを追記 -->
+              <li class="c-header__list-item">
+                <a href="#conceptArea" class="c-header__list-link">コンセプト</a>
+              </li>
+              <li class="c-header__list-item">
+                <a href="#serviceArea" class="c-header__list-link">サービス</a>  
+              </li>
+              <li class="c-header__list-item">
+                <a href="#flowArea" class="c-header__list-link">施工の流れ</a>
+              </li>
+              <li class="c-header__list-item">
+                <a href="#questionArea" class="c-header__list-link">よくあるご質問</a>
+              </li>
+              <li class="c-header__list-item">
+                <a href="#contactArea" class="c-header__list-link">お問い合わせ</a>
+              </li>
+            </ul>
+            <!-- 追記 ハンバーガーメニューのボタン -->
+            <label for="hamburger" class="c-hamburger-menu__button">
+              <span class="c-hamburger-menu__button-mark"></span>
+              <span class="c-hamburger-menu__button-mark"></span>
+              <span class="c-hamburger-menu__button-mark"></span>
+            </label>
+          </header>
+          
+        <main>           
+            <img class="heroImg" 
+              src="images/hero2.png"
+              srcset="images/hero.png 900w,
+              images/hero2.png 1366w"
+              sizes="(max-width: 767px) 80vw, 100vw" 
+              alt="テーブルと椅子の画像">
+            <section class="cncptSec" id="conceptArea">
+                <h2>CONCEPT</h2>
+                <h3><div class="catch">コンセプト</div></h3><br> 
+                <h5>家族が笑顔になれる場所</h5>
+                <p>家族が集う、温かく居心地の良い空間づくりを目指して、
+                    幅広い年代の人に安心して過ごしていただける空間づくりや、
+                    お手入れのしやすい素材を使用したリフォームをご提案いたします。</p>
+            </section>
+            <section class="svcSec" id="serviceArea">
+                <h2>SERVICE</h2>
+                <h3><div class="catch">サービス</div></h3><br>
+                <div class="svcArea">                         
+                  <ul class="bthSec" id="bathArea">
+                      <li><img src="images/list-1-img.png" alt="浴室の画像"></li>
+                      <li><a href="#bathArea"><h4>浴室</h4></a></li><br>
+                      <li><p>ご家族が一緒に入れる広めの浴槽や手すり等、安全性に配慮しています。</p></li>
+                      <li><p class="mr">more▶</p></li>
+                  </ul>                                   
+                  <ul class="lvngSec" id="livingArea">
+                      <li><img src="images/list-2-img.png" alt="リビングの画像"></li>
+                      <li><a href="#livingArea"><h4>リビング</h4></a></li><br>                       
+                      <li><p>照明や家具の配置等、くつろぎやすい空間づくりに配慮しています。</p></li>
+                      <li><p class="mr">more▶</p></li>
+                  </ul>                                     
+                  <ul class="ktnSec" id="kitchenArea"> 
+                      <li><img src="images/list-3-img.png" alt="キッチンの画像"></li>
+                      <li><a href="#kitchenArea"><h4>キッチン</h4></a></li><br>                         
+                      <li><p>機能性だけでなく、デザイン性にもこだわっております。</p></li>
+                      <li><p class="mr">more▶</p></li>
+                  </ul>                
+                </div>
+            </section>
+                      
+            <section class="flSec" id="flowArea">
+                <h2>FLOW</h2><br>
+                <h3><div class="catchRed">施工の流れ</div></h3><br>                                             
+                <ul class="flArea">
+                    <li><h6>ご相談</h6></li>
+                    <li><p>▶</p></li>
+                    <li><h6>現地調査</h6></li>
+                    <li><p>▶</p></li>
+                    <li><h6>お見積り</h6></li>
+                    <li><p>▶</p></li>
+                    <li><h6>ご契約</h6></li>
+                    <li><p>▶</p></li>
+                    <li><h6>施工</h6></li>
+                    <li><p>▶</p></li>
+                    <li><h6>お引渡し</h6></li>                            
+                </ul>                 
+            </section>
+                        
+            <section class="qstSec" id="questionArea">
+                <h2>Q&A</h2><br>
+                <h3><div class="catch">よくあるご質問</div></h3><br>
+            
+                <dl class="Qa-Box">
+                    <div class="Qa">
+                        <dt><p>見積もりは無料ですか。</p></dt>
+                        <dd><p>はい。お見積りは無料で承っております。
+                            ホームページよりお気軽にお問い合わせください。</p></dd>
+                    </div>
+                    <div class="Qa">
+                        <dt><p>普段通り生活しながらのリフォーム工事は可能ですか。</p></dt>
+                        <dd><p>はい。もちろん可能です。工事中の箇所は、
+                            何日間か使用できなくなる場合もございますのであらかじめご了承ください。
+                            大型リフォームの場合には、仮住まいもお薦めしております。</p></dd>
+                    </div>              
+                </dl>
+            </section>
+
+            <section class="ctcSec" id="contactArea">   
+                <h2>CONTACT</h2><br>
+                <h3><div class="catch">お問い合わせ</div></h3><br> 
+
+                <div class="box_con">
+                    <form method="post" action="mail.php">
+                    <ul class="formTable">
+                    <li>
+                        <p class="title">お問い合わせ種別<span>必須</span></p>
+                        <div class="box_det">
+                            <div class="box_br">
+                                <label><input type="radio" name="gender" value="資料請求">資料請求</label>
+                            </div>
+                            <div class="box_br">
+                                <label><input type="radio" name="gender" value="ご相談">ご相談</label>
+                            </div>
+                        </div>
+                      </li>
+                      <li>
+                        <p class="title">お名前<span>必須</span></p>
+                        <div class="box_det"><input size="20" type="text" class="wide" name="お名前" /></div>
+                      </li>
+                      <li>
+                        <p class="title">フリガナ<span>必須</span></p>
+                        <div class="box_det"><input size="20" type="text" class="wide" name="フリガナ" /></div>
+                      </li>
+                      <li>
+                        <p class="title">電話番号<span>必須</span></p>
+                        <div class="box_det"><input size="30" type="text" class="wide" name="電話番号" /></div>
+                      </li>
+                      <li>
+                        <p class="title">住所<span>必須</span></p>
+                        <div class="box_det">〒<input size="30" type="text" class="wide" name="住所" /></div>
+                      </li>
+                      <li>
+                        <p class="title"></p>
+                        <div class="box_det"><input size="30" type="text" class="wide" name="住所" /></div>
+                      </li>
+                      <li>
+                        <p class="title">メールアドレス<span>必須</span></p>
+                        <div class="box_det"><input size="30" type="text" class="wide" name="Email" /></div>
+                      </li>
+                      <li>
+                        <p class="title">メールアドレス（確認用）<span>必須</span></p>
+                        <div class="box_det"><input size="30" type="text" class="wide" name="Email" /></div>
+                      </li>
+                      <li>
+                        <p class="title">お問い合わせ内容</p>
+                        <div class="box_det"><textarea name="お問い合わせ内容" cols="50" rows="5"></textarea></div>
+                      </li>
+                    
+                    <p class="btn">
+                        <span><input type="submit" value="入力内容を確認する▶" /></span>
+                    </p>
+                    </ul>
+                  </form>
+                </div>               
+                <a class="pagetop" href="index.html"><div class="pagetop__arrow"></div></a>
+            </section>
+        </main>
+
+        <footer>
+            <p><small>&copy 2023 Design House Renovations</small></p>
+        </footer>
+        
+    </body>
+</html>
